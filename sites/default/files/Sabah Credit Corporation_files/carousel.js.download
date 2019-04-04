@@ -1,0 +1,32 @@
+$(document).ready(function(){
+		// Activate Carousel
+		$("#carousel-example-generic").carousel({interval: 4000});
+			
+		// Enable Carousel Indicators
+		$(".item1").click(function(){
+		$("#carousel-example-generic").carousel(0);
+		});
+		$(".item2").click(function(){
+		$("#carousel-example-generic").carousel(1);
+		});
+		$(".item3").click(function(){
+		$("#carousel-example-generic").carousel(2);
+		});
+		$(".item4").click(function(){
+		$("#carousel-example-generic").carousel(3);
+		});
+        $(".item5").click(function(){
+		$("#carousel-example-generic").carousel(4);
+		});
+        $(".item6").click(function(){
+		$("#carousel-example-generic").carousel(5);
+		});
+		
+		// Enable Carousel Controls
+		$(".left").click(function(){
+		$("#carousel-example-generic").carousel("prev");
+		});
+		$(".right").click(function(){
+		$("#carousel-example-generic").carousel("next");
+		});
+});
